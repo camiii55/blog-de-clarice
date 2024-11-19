@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Diario de Clarice</title>
+    <style>
+        body {
+            background-color: #f9c7d4;
+            color: #333;
+            font-family: 'Courier New';
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Fondo mosaico */
+        body {
+            background-image: url('fondo_mosaico.jpg'); /* Reemplaza con tu fondo */
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: repeat;
+            position: relative;
+        }
+
+        /* Capa de difuminado */
+        .blur-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(2px) brightness(0.8); /* Ajusta la intensidad del difuminado */
+            z-index: 0; /* Detrás del contenido */
+        }
+
+        header, .content, footer {
+            position: relative;
+            z-index: 1; /* Encima del difuminado */
+        }
+
+        header {
+            text-align: center;
+            padding: 0.5px;
+        }
+
+        /* Logo como encabezado principal */
+        .logo {
+            animation: glow 1.5s ease-in-out infinite;
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+
+        @keyframes glow {
+            0% { filter: drop-shadow(0 0 5px #fff); }
+            50% { filter: drop-shadow(0 0 20px #ff99ff); }
+            100% { filter: drop-shadow(0 0 5px #fff); }
+        }
+
+        /* Speech (párrafo debajo del logo) */
+        header p {
+            color: #fff; /* Blanco */
+            margin-top: 0.5px; /* Reducido el espacio superior */
+            font-size: 1.0rem;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.8);
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            color: #333; /* Texto negro */
+        }
+
+        .content p {
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #fff; /* Contacto en blanco */
+        }
+
+        footer a {
+            color: #ff66b3;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Capa de difuminado sobre el fondo -->
+    <div class="blur-overlay"></div>
+    
+    <header>
+        <!-- Aquí va el logo como encabezado -->
+        <img src="logo_de_clarice.png" alt="Logo de Clarice" class="logo" width="300" height="300">
+        <p>Un blog dedicado a libros, historias y aventuras literarias.</p>
+    </header>
+
+    <div class="content">
+        <p>¡Hola, lectores! Hoy les traigo una historia un tanto... diferente. Todo empezó cuando me desperté con unas ganas inmensas de leer algo nuevo. Me preparé un café (porque, obvio, no soy persona sin café), me vestí y salí disparada a la librería del papá de una amiga. Ya saben, el típico lugar donde encuentro libros que me gritan: LLEVAME.</p>
+
+        <p>Todo iba normal hasta que me encontré con un pasillo extraño, como sacado de una película de misterio. Deshabitado, oscuro, y totalmente opuesto al resto del lugar. Curiosa como soy, me adentré. Justo cuando estaba por dar la vuelta y salir de ahí porque no encontre nada que llame mi atencion, escuché un golpe. Miré y vi un libro negro sin dibujos ni nada: "La Antena". ¿Extraño, no? Obviamente, lo agarré y lo llevé a la caja para pagarlo, pero aca viene lo raro: no estaba en el sistema. La señora me miró raro, pero al final accedió a que me lo llevara.</p>
+
+        <p>Al llegar a casa, dejé el libro sobre la mesa y decidí leerlo más tarde. Pero, ¡sorpresa! El libro se abrió solo. "Esto no es normal", pensé, y lo guardé en un cajón. Más tarde, cuando finalmente reuní valor para abrirlo, ¡el libro me absorbió! Caí en un espiral blanco y negro, gritando como en una montaña rusa, hasta aterrizar detrás de un tacho de basura sobre una calle de una ciudad.</p>
+
+        <p>Fue ahí donde vi a una niña corriendo de un hombre rata. ¡Sí, leyeron bien! HOMBRE RATA. Intenté pellizcarme para despertar, pero no funcionó. La niña terminó cayendo en el tacho de basura, y yo pensé: "Esto no puede ser real". Ella me miró, se acercó, y me preguntó quién era. ¡Lo más loco es que no hablaba, salían palabras flotantes alrededor de ella! Su nombre era Ana, y después de un rato de explicaciones, me llevó a su casa. Su mundo no tiene colores ni voz, y aca estoy... ¡sin saber cómo salir!</p>
+
+        <p>¿Qué creen que pasó después?</p>
+
+        <p>Continuara...</p>
+    </div>
+
+    <footer>
+        <p>Contacto: claricebook@gmail.com | Tel: +55 19 92485 3256 | IG: clarice.books.blog | Dirección: Recife, Brasil</p>
+    </footer>
+</body>
+</html>
